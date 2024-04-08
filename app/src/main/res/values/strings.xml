@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Love</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_your_crush_name">Enter Your Crush Name</string>
+    <string name="this_is_quotes">This Is Quotes</string>
+    <string name="todo">TODO</string>
+    <string name="love_is_a_friendship_that_has_caught_fire_it_is_a_quiet_understanding_mutual_confidence_sharing_and_forgiving_it_is_loyalty_through_thick_and_thin_beginnings_middles_and_ends_quot_ann_landers">Love is a friendship that has caught fire. It is a quiet understanding, mutual confidence, sharing and forgiving. It is loyalty through thick and thin; beginnings, middles, and ends.\" - Ann Landers</string>
+    <string name="_00">00%</string>
+    <string name="check">Check</string>
+</resources>

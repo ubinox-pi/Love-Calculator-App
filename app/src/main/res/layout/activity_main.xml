@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Main_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/as"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/Name1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enter_your_name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textColor="#000000"
+            android:textColorHint="#A1887F"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/love" />
+
+        <EditText
+            android:id="@+id/name2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enter_your_crush_name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#A1887F"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circlebutton"
+            android:text="@string/check"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/btn_sbt"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circlebutton"
+            android:text="Calculate"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/q"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bilbo_swash_caps"
+            android:gravity="center"
+            android:text="@string/love_is_a_friendship_that_has_caught_fire_it_is_a_quiet_understanding_mutual_confidence_sharing_and_forgiving_it_is_loyalty_through_thick_and_thin_beginnings_middles_and_ends_quot_ann_landers"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Percentage"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circlebutton"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/percent_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_00"
+                android:textColor="#000000"
+                android:textSize="96sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
