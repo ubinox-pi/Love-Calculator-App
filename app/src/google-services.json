@@ -1,10 +1,30 @@
 {
   "project_info": {
     "project_number": "222238941211",
+    "firebase_url": "https://love-calculator-b9721-default-rtdb.firebaseio.com",
     "project_id": "love-calculator-b9721",
     "storage_bucket": "love-calculator-b9721.appspot.com"
   },
   "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222238941211:android:f9bdfbeb7b7b9d9a0f58be",
+        "android_client_info": {
+          "package_name": "com.mylove.bytemechanic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbEnxgoNNBogyMvOjgo8sQ_eNSMjEBDuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:222238941211:android:46dc5b9cb1df6b990f58be",

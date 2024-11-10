@@ -27,10 +27,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.mylove.calculator" />
-                  <option name="mobileSdkAppId" value="1:438477911717:android:f81832d192a5ebed79ff4c" />
-                  <option name="projectId" value="doge-69ff5" />
-                  <option name="projectNumber" value="438477911717" />
+                  <option name="appId" value="com.mylove.bytemechanic" />
+                  <option name="mobileSdkAppId" value="1:222238941211:android:f9bdfbeb7b7b9d9a0f58be" />
+                  <option name="projectId" value="love-calculator-b9721" />
+                  <option name="projectNumber" value="222238941211" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

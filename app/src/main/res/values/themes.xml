@@ -3,6 +3,8 @@
     <style name="Base.Theme.MyLove" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
     </style>
 
     <style name="Theme.MyLove" parent="Base.Theme.MyLove" />
