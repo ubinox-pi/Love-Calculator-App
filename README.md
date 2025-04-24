@@ -7,7 +7,6 @@
     <li>Enter two names and calculate a fun love percentage.</li>
     <li>Display of random romantic quotes.</li>
     <li>Firebase Realtime Database integration to save user input data.</li>
-    <li>Easter eggs for specific names (like kabita, ashish, ramjee, etc.).</li>
     <li>Full-screen immersive layout.</li>
     <li>Launch to Instagram-like screen from the app.</li>
   </ul>
