@@ -70,5 +70,5 @@ com.mylove.bytemechanic/
   <p>This project is made for educational and fun purposes. You can customize and use it freely!</p>
 
   <hr>
-  <p style="text-align:center;">Made with ❤️ by <strong>[Ramjee Prasad]</strong></p>
+  <p style="text-align:center;">Made with ❤️ by <strong>Ramjee Prasad</strong></p>
 </div>
