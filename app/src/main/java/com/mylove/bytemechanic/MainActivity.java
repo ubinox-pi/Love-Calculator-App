@@ -26,7 +26,9 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new TimerTask() {
+        timer.schedule( new TimerTask() {
             @Override
             public void run() {
                 runOnUiThread(() -> {
@@ -72,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         }, 0, UPDATE_INTERVAL);
+
+        List<String> group = Arrays.asList("kabita","ayshi", "ankit","ashish", "ashishkumar", "ramjee", "ramjeeprasad", "ashish kumar", "ramjee prasad");
 
     Button click = findViewById(R.id.calculate);
     Button c2 = findViewById(R.id.btn_sbt);
@@ -86,11 +90,11 @@ public class MainActivity extends AppCompatActivity {
         String k = text2.getText().toString().trim();
         if (text1.getText().toString().isEmpty())
         {
-            Toast.makeText(MainActivity.this,"Enter Your Name",Toast.LENGTH_SHORT).show();
+            text1.setError("Enter Your Name");
         }
         else if (text2.getText().toString().isEmpty())
         {
-            Toast.makeText(MainActivity.this,"Enter Your Crush Name",Toast.LENGTH_SHORT).show();
+            text2.setError("Enter Your Partner Name");
         }
         else if (!text1.getText().toString().matches("[a-zA-Z ]*") ||
                 !text2.getText().toString().matches("[a-zA-Z ]*"))
@@ -100,6 +104,11 @@ public class MainActivity extends AppCompatActivity {
         else if (text1.getText().toString().trim().equals(k))
         {
             d = new Dialog(MainActivity.this,99);
+            Show();
+        }
+        else if (group.contains(text1.getText().toString().toLowerCase().trim()) || group.contains(text2.getText().toString().toLowerCase().trim()))
+        {
+            d = new Dialog(MainActivity.this,100);
             Show();
         }
         else
@@ -113,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 n1 = text1.getText().toString().toLowerCase().trim();
                 n2 = text2.getText().toString().toLowerCase().trim();
                 con = n1+n2;
-                String uniqueId =con+un;
+                String uniqueId = con+un;
                 l = con.length();
                 int asciiArray;
                 int sumascii = 0;

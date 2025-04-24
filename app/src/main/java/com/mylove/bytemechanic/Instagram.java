@@ -79,7 +79,7 @@ public class Instagram extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(Instagram.this, "Check Internet Connection", Toast.LENGTH_SHORT).show();
+                Ayshi = "https://www.instagram.com/shannidhya_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
             }
         });
     }
